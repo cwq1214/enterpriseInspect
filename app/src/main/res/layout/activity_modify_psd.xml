@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_actionbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/white"
+                android:divider="@drawable/divider_1px"
+                android:showDividers="beginning|end|middle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:background="@null"
+                        android:textSize="14dp"
+                        android:hint="请输入短信验证码"
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:padding="8dp" />
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:text="获取验证码"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <EditText
+                    android:background="@null"
+
+                    android:textSize="14dp"
+                    android:hint="请输入新密码"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp" />
+                <EditText
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:hint="请再次输入新密码"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:text="确定"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

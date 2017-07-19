@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_actionbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_weight="1"
+        android:background="@color/dividerColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/white"
+            android:divider="@drawable/divider_1px"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:text="双违类型："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:id="@+id/missionType" />
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/selMissionType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:text="地址："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:id="@+id/address" />
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/coordinate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/selLocationImage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:text="任务名称："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:hint="请输入任务名称"
+                    android:background="@null"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inputMissionName" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/inputMissionDes"
+                android:padding="8dp"
+                android:background="@null"
+                android:textSize="14dp"
+                android:gravity="top|left"
+                android:hint="请填写任务的具体内容..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                 />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_layout">
+
+
+                <FrameLayout
+                    android:id="@+id/addImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    >
+                    <ImageView
+                        android:src="@mipmap/add"
+                        android:padding="10dp"
+                        android:background="#DDDDDD"
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/selImage" />
+                </FrameLayout>
+
+            </org.apmem.tools.layouts.FlowLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn_done" />
+</LinearLayout>

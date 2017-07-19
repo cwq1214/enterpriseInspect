@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_1px"
+    android:showDividers="beginning|end|middle"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="企业名称："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <AutoCompleteTextView
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputCompanName"
+            android:background="@null"
+            android:hint="请输入企业名称" />
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/searchBtn"
+            android:text="查找"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="企业门牌号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputCompanNum"
+            android:background="@null"
+            android:hint="请输入企业门牌号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="企业法人："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputCompanLegalPerson"
+            android:background="@null"
+            android:hint="请输入企业法人" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="联系方式："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputContact"
+            android:background="@null"
+            android:hint="请输入联系方式"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="安全负责人："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputSecurityHead"
+            android:background="@null"
+            android:hint="请输入安全负责人" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="安全负责人联系方式："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputSHeadContact"
+            android:background="@null"
+            android:hint="请输入安全负责人联系方式"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14dp"
+            android:text="地址："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+        <TextView
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:id="@+id/textLocation" />
+        <ImageView
+            android:src="@mipmap/coordinate"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/selLocationBtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/selMember"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_1px"
+        android:dividerPadding="8dp"
+        android:showDividers="middle"
+        >
+        <LinearLayout
+            android:id="@+id/location"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textSize="14dp"
+                android:text="检查人员："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+            <TextView
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/selMemberBtn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_1px"
+        android:dividerPadding="8dp"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:id="@+id/mission">
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:text="任务类型："
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000000"
+            android:id="@+id/selMession" />
+    </LinearLayout>
+</LinearLayout>

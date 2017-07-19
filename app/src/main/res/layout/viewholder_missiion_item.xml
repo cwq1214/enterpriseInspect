@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#FFF">
+    <TextView
+        android:text="巡检任务"
+        android:textSize="14dp"
+        android:id="@+id/missionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000" />
+    <TextView
+        android:text="2017-1-1"
+        android:textSize="10dp"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#000" />
+    <TextView
+        android:text="天津安光油墨厂"
+        android:textSize="12dp"
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/missionName"
+        android:textColor="#000"
+        android:paddingTop="8dp" />
+    <TextView
+        android:text="安光村"
+        android:textSize="12dp"
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_alignParentRight="true"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_alignTop="@+id/companyName" />
+</RelativeLayout>

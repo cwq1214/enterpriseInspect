@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:background="@null"
+            android:hint="请输入描述"
+            android:id="@+id/inputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:gravity="top|left"
+            />
+        <View
+            android:layout_margin="4dp"
+            android:background="@drawable/divider_1px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_layout">
+
+
+             <FrameLayout
+                 android:id="@+id/addImage"
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 >
+                 <ImageView
+                     android:src="@mipmap/add"
+                     android:padding="10dp"
+                     android:background="#DDDDDD"
+                     android:layout_gravity="center"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:id="@+id/selImage" />
+             </FrameLayout>
+
+        </org.apmem.tools.layouts.FlowLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:id="@+id/selPeopleLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        >
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:id="@+id/selPeople">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="检查人员:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp" />
+
+            <ImageView
+                android:src="@mipmap/arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <View
+            android:layout_margin="8dp"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:text="复查情况"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp" />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/sel"
+                android:checked="false"
+                android:padding="8dp"
+                android:button="@null"
+                android:textColor="@drawable/sel_radiobtn_textcolor"
+                android:background="@drawable/sel_radiobtn_background"
+                android:text="合格"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/disSel"
+                android:padding="8dp"
+                android:button="@null"
+                android:textColor="@drawable/sel_radiobtn_textcolor"
+                android:background="@drawable/sel_radiobtn_background"
+                android:text="不合格"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+</LinearLayout>
